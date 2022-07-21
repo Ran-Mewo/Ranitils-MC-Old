@@ -1,38 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ranitils",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Ranitils-MC",
+  "description": "A small utility mod for Ran (Not to be confused with Ran's utility library \"Ranitils\")",
   "authors": [
-    "Me!"
+    "Ran"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://ran-helo.github.io/",
+    "sources": "https://github.com/Ran-helo/Ranitils-MC"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GNU LGPL-2.1",
+  "icon": "assets/ranitils/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.ran.minecraft.ranitils.RanitilsMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "ranitils.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": "*",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
