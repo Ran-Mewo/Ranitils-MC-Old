@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.ranitils.title": "Ranitils",
+  "text.autoconfig.ranitils.option.anyArmor": "Allow any item in armor slots",
+  "text.autoconfig.ranitils.option.anyArmor.@Tooltip": "put torch on you head\ndoesnt disable the command"
+}

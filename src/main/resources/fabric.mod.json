@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "io.github.ran.minecraft.ranitils.RanitilsMod"
+    ],
+    "modmenu": [
+      "io.github.ran.minecraft.ranitils.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -29,6 +32,7 @@
   "depends": {
     "fabricloader": "*",
     "fabric": "*",
+    "cloth-config": "*",
     "minecraft": "*",
     "java": ">=17"
   }

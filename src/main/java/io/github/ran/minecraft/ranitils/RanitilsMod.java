@@ -1,5 +1,6 @@
 package io.github.ran.minecraft.ranitils;
 
+import io.github.ran.minecraft.ranitils.config.ModConfig;
 import io.github.ran.minecraft.ranitils.util.AnyArmor;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ public class RanitilsMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hewwo!");
-
+		ModConfig.init();
 		AnyArmor.registerCommand();
 	}
 }

@@ -1,5 +1,6 @@
 package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
+import io.github.ran.minecraft.ranitils.config.ModConfig;
 import io.github.ran.minecraft.ranitils.util.AnyArmor;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.world.entity.player.Player;
@@ -23,28 +24,30 @@ public abstract class MultiPlayerGameModeMixin {
 
 	@Inject(method = "handleInventoryMouseClick", at = @At("HEAD"), cancellable = true)
 	private void onClickSlot(int syncId, int slotId, int button, ClickType clickType, Player player, CallbackInfo ci) {
-		// If player clicked on a slot in their inventory
-		if (clickType == ClickType.PICKUP && syncId == 0) {
-			// If player clicked on an armor slot else set the clicked slot
-			if (slotId >= 5 && slotId <= 8) {
-				// Get & set the slot clicked before the armor slot
-				if (prevPickSlot > -1) {
-					if (prevPickSlot >= 5 && prevPickSlot <= 8) {
-						// If the previously clicked slot is an armor slot, put the armor back in the slot
-						putBack(syncId, slotId, button, clickType, player);
+		if (ModConfig.getInstance().anyArmor) {
+			// If player clicked on a slot in their inventory
+			if (clickType == ClickType.PICKUP && syncId == 0) {
+				// If player clicked on an armor slot else set the clicked slot
+				if (slotId >= 5 && slotId <= 8) {
+					// Get & set the slot clicked before the armor slot
+					if (prevPickSlot > -1) {
+						if (prevPickSlot >= 5 && prevPickSlot <= 8) {
+							// If the previously clicked slot is an armor slot, put the armor back in the slot
+							putBack(syncId, slotId, button, clickType, player);
+						} else {
+							// Magic!
+							this.handleInventoryMouseClick(syncId, prevPickSlot, button, clickType, player);
+							AnyArmor.putArmor_MC(prevPickSlot, slotId);
+						}
+						// Reset the previously clicked slot & return
+						prevPickSlot = -1;
+						ci.cancel();
 					} else {
-						// Magic!
-						this.handleInventoryMouseClick(syncId, prevPickSlot, button, clickType, player);
-						AnyArmor.putArmor_MC(prevPickSlot, slotId);
+						prevPickSlot = slotId;
 					}
-					// Reset the previously clicked slot & return
-					prevPickSlot = -1;
-					ci.cancel();
 				} else {
 					prevPickSlot = slotId;
 				}
-			} else {
-				prevPickSlot = slotId;
 			}
 		}
 	}
