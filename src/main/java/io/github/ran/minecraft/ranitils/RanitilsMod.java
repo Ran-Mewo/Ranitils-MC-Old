@@ -2,17 +2,20 @@ package io.github.ran.minecraft.ranitils;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import io.github.ran.minecraft.ranitils.util.AnyArmor;
-import net.fabricmc.api.ModInitializer;
+import io.github.ran.minecraft.ranitils.util.VerticalTP;
+import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class RanitilsMod implements ModInitializer {
+public class RanitilsMod implements ClientModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Ranitils");
 
 	@Override
-	public void onInitialize() {
+	public void onInitializeClient() {
 		LOGGER.info("Hewwo!");
 		ModConfig.init();
-		AnyArmor.registerCommand();
+
+		AnyArmor.register();
+		VerticalTP.register();
 	}
 }

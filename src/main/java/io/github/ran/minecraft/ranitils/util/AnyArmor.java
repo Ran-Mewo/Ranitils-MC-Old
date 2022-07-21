@@ -14,7 +14,7 @@ import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.arg
 
 @SuppressWarnings("ConstantConditions")
 public class AnyArmor {
-    public static void registerCommand() {
+    public static void register() {
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) ->
                 dispatcher.register(ClientCommandManager.literal("wear").then(argument("armorSlot", integer(0, 3))
                         .executes(ctx -> execute(ctx.getSource(), getInteger(ctx, "armorSlot"))))));

@@ -8,8 +8,11 @@ import me.shedaniel.autoconfig.annotation.*;
 
 @Config(name = "ranitils")
 public class ModConfig implements ConfigData {
+    @ConfigEntry.Gui.Tooltip // In the code this might be called anyArmor
+    public boolean wearableItems = true;
+
     @ConfigEntry.Gui.Tooltip
-    public boolean anyArmor = true;
+    public boolean verticalTP = false;
 
     public static void init() {
         AutoConfig.register(ModConfig.class, Toml4jConfigSerializer::new);

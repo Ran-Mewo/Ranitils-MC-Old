@@ -1,5 +1,11 @@
 {
+  "category.ranitils": "Ranitils",
   "text.autoconfig.ranitils.title": "Ranitils",
-  "text.autoconfig.ranitils.option.anyArmor": "Allow any item in armor slots",
-  "text.autoconfig.ranitils.option.anyArmor.@Tooltip": "put torch on you head\ndoesnt disable the command"
+
+  "text.autoconfig.ranitils.option.wearableItems": "WearableItems",
+  "text.autoconfig.ranitils.option.wearableItems.@Tooltip": "Allows any item in armor slots\n\n\u00a77put torch on you head\ndisabling this doesn't disable the wear command",
+
+  "key.ranitils.verticaltp": "VerticalTP",
+  "text.autoconfig.ranitils.option.verticalTP": "Toggle VerticalTP",
+  "text.autoconfig.ranitils.option.verticalTP.@Tooltip": "Allows you to teleport vertically\n\n\u00a74Use at own your risk as it can get you banned"
 }

@@ -24,7 +24,7 @@ public abstract class MultiPlayerGameModeMixin {
 
 	@Inject(method = "handleInventoryMouseClick", at = @At("HEAD"), cancellable = true)
 	private void onClickSlot(int syncId, int slotId, int button, ClickType clickType, Player player, CallbackInfo ci) {
-		if (ModConfig.getInstance().anyArmor) {
+		if (ModConfig.getInstance().wearableItems) {
 			// If player clicked on a slot in their inventory
 			if (clickType == ClickType.PICKUP && syncId == 0) {
 				// If player clicked on an armor slot else set the clicked slot
