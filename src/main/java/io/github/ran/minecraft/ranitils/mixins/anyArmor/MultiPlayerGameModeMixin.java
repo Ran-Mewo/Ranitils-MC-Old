@@ -2,6 +2,9 @@ package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import io.github.ran.minecraft.ranitils.util.AnyArmor;
+import io.github.ran.minecraft.ranitils.util.AutoSwitchElytra;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ClickType;
@@ -26,7 +29,7 @@ public abstract class MultiPlayerGameModeMixin {
 	private void onClickSlot(int syncId, int slotId, int button, ClickType clickType, Player player, CallbackInfo ci) {
 		if (ModConfig.getInstance().wearableItems) {
 			// If player clicked on a slot in their inventory
-			if (clickType == ClickType.PICKUP && syncId == 0) {
+			if (clickType == ClickType.PICKUP && Minecraft.getInstance().screen instanceof InventoryScreen) {
 				// If player clicked on an armor slot else set the clicked slot
 				if (slotId >= 5 && slotId <= 8) {
 					// Get & set the slot clicked before the armor slot

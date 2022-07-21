@@ -5,7 +5,13 @@
   "text.autoconfig.ranitils.option.wearableItems": "WearableItems",
   "text.autoconfig.ranitils.option.wearableItems.@Tooltip": "Allows any item in armor slots\n\n\u00a77put torch on you head\ndisabling this doesn't disable the wear command",
 
-  "key.ranitils.verticaltp": "VerticalTP",
-  "text.autoconfig.ranitils.option.verticalTP": "Toggle VerticalTP",
-  "text.autoconfig.ranitils.option.verticalTP.@Tooltip": "Allows you to teleport vertically\n\n\u00a74Use at own your risk as it can get you banned"
+  "key.ranitils.verticaltp": "Toggle VerticalTP",
+  "text.autoconfig.ranitils.option.verticalTP": "VerticalTP",
+  "text.autoconfig.ranitils.option.verticalTP.@Tooltip": "Allows you to teleport vertically\n\n\u00a74Use at own your risk as it can get you banned",
+
+  "text.autoconfig.ranitils.option.autoSwitchElytra": "AutoSwitchElytra",
+  "text.autoconfig.ranitils.option.autoSwitchElytra.@Tooltip": "Automatically switches elytra and chestplate",
+
+  "text.autoconfig.ranitils.option.roadRunner": "RoadRunner",
+  "text.autoconfig.ranitils.option.roadRunner.@Tooltip": "Allows you to mine flat while digging since it doesn't break blocks under you\n\n\u00a77you can sneak to mine underneath"
 }

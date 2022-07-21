@@ -6,7 +6,9 @@
   "mixins": [
   ],
   "client": [
-    "anyArmor.MultiPlayerGameModeMixin"
+    "anyArmor.MultiPlayerGameModeMixin",
+    "autoSwitchElytra.LocalPlayerMixin",
+    "roadrunner.MultiPlayerGameModeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

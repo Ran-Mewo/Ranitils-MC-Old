@@ -30,9 +30,9 @@ public class VerticalTP {
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(mc -> {
             if (key.isDown()) {
-                key.setDown(false);
                 ModConfig.getInstance().verticalTP = !ModConfig.getInstance().verticalTP;
-                if (mc.player != null) mc.player.sendSystemMessage(Component.literal("Vertical TP: " + ModConfig.getInstance().verticalTP));
+                ModConfig.getConfigHolder().save();
+                if (mc.player != null) mc.player.sendSystemMessage(Component.literal("\u00a77[Ranitils] Vertical TP: " + ModConfig.getInstance().verticalTP));
             }
         });
         ClientTickEvents.END_CLIENT_TICK.register(VerticalTP::tryTeleport);
@@ -52,9 +52,9 @@ public class VerticalTP {
 
                 BlockState blockState = level.getBlockState(blockPos);
 
-                if (Math.abs((Math.floor(player.getX()) - blockPos.getX())) > 2) return;
-                if (Math.abs((Math.floor(player.getZ()) - blockPos.getZ())) > 2) return;
-                if (Math.abs((Math.floor(player.getY()) - blockPos.getY())) < 2) return;
+                if (Math.abs(player.getBlockX() - blockPos.getX()) > 2) return;
+                if (Math.abs(player.getBlockZ() - blockPos.getZ()) > 2) return;
+                if (Math.abs(player.getBlockY() - blockPos.getY()) < 2) return;
 
                 if (blockState.use(level, player, InteractionHand.MAIN_HAND, blockHitResult) != InteractionResult.PASS) {
                     return;

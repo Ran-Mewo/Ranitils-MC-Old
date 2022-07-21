@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "ranitils",
   "version": "${version}",
-
   "name": "Ranitils-MC",
   "description": "A small utility mod for Ran (Not to be confused with Ran's utility library \"Ranitils\")",
   "authors": [
@@ -35,5 +34,9 @@
     "cloth-config": "*",
     "minecraft": "*",
     "java": ">=17"
+  },
+
+  "suggests": {
+    "elytra-recast": "*"
   }
 }
