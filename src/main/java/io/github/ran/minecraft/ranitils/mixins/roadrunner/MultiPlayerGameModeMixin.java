@@ -1,7 +1,7 @@
 package io.github.ran.minecraft.ranitils.mixins.roadrunner;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.RoadRunner;
+import io.github.ran.minecraft.ranitils.util.roadRunner.RoadRunner;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

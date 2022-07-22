@@ -3,7 +3,7 @@
   "id": "ranitils",
   "version": "${version}",
   "name": "Ranitils-MC",
-  "description": "A small utility mod for Ran (Not to be confused with Ran's utility library \"Ranitils\")",
+  "description": "A small utility mod for Ran (Not to be confused with Ran's utility library \"Ranitils\")\n\n\u00a76Special thanks to these people:\u00a7e\nCodeF53 (For helping me make mod)\nplusls (For creating OMMC)\nLuna (For creating Elytra Recast)\u00a7r\u00a77\n",
   "authors": [
     "Ran"
   ],
@@ -34,9 +34,5 @@
     "cloth-config": "*",
     "minecraft": "*",
     "java": ">=17"
-  },
-
-  "suggests": {
-    "elytra-recast": "*"
   }
 }

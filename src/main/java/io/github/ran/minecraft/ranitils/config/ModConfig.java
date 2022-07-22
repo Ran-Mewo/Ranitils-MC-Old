@@ -13,13 +13,16 @@ public class ModConfig implements ConfigData {
     public boolean wearableItems = true;
 
     @ConfigEntry.Gui.Tooltip
-    public boolean verticalTP = false;
-
-    @ConfigEntry.Gui.Tooltip
     public boolean autoSwitchElytra = true;
 
     @ConfigEntry.Gui.Tooltip
+    public boolean elytraRecast = false;
+
+    @ConfigEntry.Gui.Tooltip
     public boolean roadRunner = false;
+
+    @ConfigEntry.Gui.Tooltip
+    public boolean verticalTP = false;
 
     public static void init() {
         AutoConfig.register(ModConfig.class, Toml4jConfigSerializer::new);

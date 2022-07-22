@@ -1,8 +1,7 @@
 package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.AnyArmor;
-import io.github.ran.minecraft.ranitils.util.AutoSwitchElytra;
+import io.github.ran.minecraft.ranitils.util.anyArmor.AnyArmor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;

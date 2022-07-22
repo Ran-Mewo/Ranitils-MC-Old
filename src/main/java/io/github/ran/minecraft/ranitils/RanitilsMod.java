@@ -1,8 +1,8 @@
 package io.github.ran.minecraft.ranitils;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.AnyArmor;
-import io.github.ran.minecraft.ranitils.util.VerticalTP;
+import io.github.ran.minecraft.ranitils.util.anyArmor.AnyArmor;
+import io.github.ran.minecraft.ranitils.util.verticalTP.VerticalTP;
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

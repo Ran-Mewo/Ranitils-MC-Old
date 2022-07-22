@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.util;
+package io.github.ran.minecraft.ranitils.util.anyArmor;
 
 import com.mojang.brigadier.Command;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;

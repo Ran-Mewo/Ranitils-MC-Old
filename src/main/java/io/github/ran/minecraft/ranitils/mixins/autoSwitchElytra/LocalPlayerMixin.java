@@ -2,7 +2,7 @@ package io.github.ran.minecraft.ranitils.mixins.autoSwitchElytra;
 
 import com.mojang.authlib.GameProfile;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.AutoSwitchElytra;
+import io.github.ran.minecraft.ranitils.util.autoSwitchElytra.AutoSwitchElytra;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.AbstractClientPlayer;

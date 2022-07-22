@@ -3,15 +3,18 @@
   "text.autoconfig.ranitils.title": "Ranitils",
 
   "text.autoconfig.ranitils.option.wearableItems": "WearableItems",
-  "text.autoconfig.ranitils.option.wearableItems.@Tooltip": "Allows any item in armor slots\n\n\u00a77put torch on you head\ndisabling this doesn't disable the wear command",
+  "text.autoconfig.ranitils.option.wearableItems.@Tooltip": "Allows any item in armor slots\n\n\u00a77put torch on you head\ndisabling this doesn't disable the wear command\n\u00a7eThis does not work in creative mode",
 
   "key.ranitils.verticaltp": "Toggle VerticalTP",
   "text.autoconfig.ranitils.option.verticalTP": "VerticalTP",
-  "text.autoconfig.ranitils.option.verticalTP.@Tooltip": "Allows you to teleport vertically\n\n\u00a77zoop up\n\u00a74Use at own your risk as it can get you banned",
+  "text.autoconfig.ranitils.option.verticalTP.@Tooltip": "Allows you to teleport vertically\n\n\u00a77zoop up\n\u00a74Use at your own risk as it can get you banned",
 
   "text.autoconfig.ranitils.option.autoSwitchElytra": "AutoSwitchElytra",
   "text.autoconfig.ranitils.option.autoSwitchElytra.@Tooltip": "Automatically switches elytra and chestplate\n\n\u00a77swoop swop",
 
   "text.autoconfig.ranitils.option.roadRunner": "RoadRunner",
-  "text.autoconfig.ranitils.option.roadRunner.@Tooltip": "Allows you to mine flat while digging since it doesn't break blocks under you\n\n\u00a77good for teh haste minin\n\u00a77you can sneak to mine underneath"
+  "text.autoconfig.ranitils.option.roadRunner.@Tooltip": "Allows you to mine flat while digging since it doesn't break blocks under you\n\n\u00a77good for teh haste minin\n\u00a77you can sneak to mine underneath",
+
+  "text.autoconfig.ranitils.option.elytraRecast": "ElytraBounce",
+  "text.autoconfig.ranitils.option.elytraRecast.@Tooltip": "Bounce with elytra instead of landing when holding down space\n\n\u00a74Use at your own risk as it can get you banned"
 }
