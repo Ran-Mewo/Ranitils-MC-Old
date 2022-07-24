@@ -6,8 +6,12 @@
   "client": [
     "anyArmor.MultiPlayerGameModeMixin",
     "autoSwitchElytra.LocalPlayerMixin",
+    "elytraRecast.LivingEntityMixin",
     "roadrunner.MultiPlayerGameModeMixin",
-    "elytraRecast.LivingEntityMixin"
+    "waypoints.ChatComponentMixin",
+    "waypoints.LevelRendererMixin",
+    "waypoints.TextComponentAccessor",
+    "waypoints.TranslatableComponentAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

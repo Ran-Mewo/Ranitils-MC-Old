@@ -9,17 +9,24 @@ import me.shedaniel.autoconfig.annotation.*;
 
 @Config(name = "ranitils")
 public class ModConfig implements ConfigData {
-    @ConfigEntry.Gui.Tooltip // In the code this might be called anyArmor
+    @ConfigEntry.Gui.Tooltip // This might be called anyArmor
     public boolean wearableItems = true;
 
     @ConfigEntry.Gui.Tooltip
     public boolean autoSwitchElytra = true;
 
-    @ConfigEntry.Gui.Tooltip
+    @ConfigEntry.Gui.Tooltip // This might be called elytraBounce
     public boolean elytraRecast = false;
 
     @ConfigEntry.Gui.Tooltip
     public boolean roadRunner = false;
+
+    @ConfigEntry.Gui.Tooltip
+    public boolean waypointCoordinateConvert = true;
+    @ConfigEntry.Gui.Tooltip
+    public boolean noWaypointBeam = false;
+    @ConfigEntry.Gui.Tooltip
+    public boolean waypointSquareIcon = false;
 
     @ConfigEntry.Gui.Tooltip
     public boolean verticalTP = false;

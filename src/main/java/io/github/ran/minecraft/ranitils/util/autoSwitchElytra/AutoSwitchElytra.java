@@ -21,29 +21,28 @@ public class AutoSwitchElytra {
     }
 
     public static void autoSwitch(int sourceSlot, Minecraft client, LocalPlayer clientPlayerEntity, Predicate<ItemStack> check) {
-        if (client.gameMode == null) {
-            return;
-        }
-        if (clientPlayerEntity.containerMenu != clientPlayerEntity.inventoryMenu) {
-            clientPlayerEntity.closeContainer();
-        }
-        AbstractContainerMenu screenHandler = clientPlayerEntity.containerMenu;
-        ArrayList<ItemStack> itemStacks = new ArrayList<>();
-        for (int i = 0; i < screenHandler.slots.size(); ++i) {
-            itemStacks.add(screenHandler.slots.get(i).getItem().copy());
-        }
-
-        int idxToSwitch = -1;
-        for (int i = 0; i < itemStacks.size(); ++i) {
-            if (check.test(itemStacks.get(i))) {
-                idxToSwitch = i;
-                break;
+        if (client.gameMode != null) {
+            if (clientPlayerEntity.containerMenu != clientPlayerEntity.inventoryMenu) {
+                clientPlayerEntity.closeContainer();
             }
-        }
-        if (idxToSwitch != -1) {
-            client.gameMode.handleInventoryMouseClick(screenHandler.containerId, idxToSwitch, 0, ClickType.PICKUP, clientPlayerEntity);
-            client.gameMode.handleInventoryMouseClick(screenHandler.containerId, sourceSlot, 0, ClickType.PICKUP, clientPlayerEntity);
-            client.gameMode.handleInventoryMouseClick(screenHandler.containerId, idxToSwitch, 0, ClickType.PICKUP, clientPlayerEntity);
+            AbstractContainerMenu screenHandler = clientPlayerEntity.containerMenu;
+            ArrayList<ItemStack> itemStacks = new ArrayList<>();
+            for (int i = 0; i < screenHandler.slots.size(); ++i) {
+                itemStacks.add(screenHandler.slots.get(i).getItem().copy());
+            }
+
+            int idxToSwitch = -1;
+            for (int i = 0; i < itemStacks.size(); ++i) {
+                if (check.test(itemStacks.get(i))) {
+                    idxToSwitch = i;
+                    break;
+                }
+            }
+            if (idxToSwitch != -1) {
+                client.gameMode.handleInventoryMouseClick(screenHandler.containerId, idxToSwitch, 0, ClickType.PICKUP, clientPlayerEntity);
+                client.gameMode.handleInventoryMouseClick(screenHandler.containerId, sourceSlot, 0, ClickType.PICKUP, clientPlayerEntity);
+                client.gameMode.handleInventoryMouseClick(screenHandler.containerId, idxToSwitch, 0, ClickType.PICKUP, clientPlayerEntity);
+            }
         }
     }
 }

@@ -16,5 +16,14 @@
   "text.autoconfig.ranitils.option.roadRunner.@Tooltip": "Allows you to mine flat while digging since it doesn't break blocks under you\n\n\u00a77good for teh haste minin\n\u00a77you can sneak to mine underneath",
 
   "text.autoconfig.ranitils.option.elytraRecast": "ElytraBounce",
-  "text.autoconfig.ranitils.option.elytraRecast.@Tooltip": "Bounce with elytra instead of landing when holding down space\n\n\u00a74Use at your own risk as it can get you banned"
+  "text.autoconfig.ranitils.option.elytraRecast.@Tooltip": "Bounce with elytra instead of landing when holding down space\n\n\u00a77sweeep swop boing boing swop\n\u00a74Use at your own risk as it can get you banned",
+
+  "key.ranitils.removeWaypoint": "Remove all waypoints",
+  "key.ranitils.sendWaypoint": "Send looking at position as waypoint",
+  "text.autoconfig.ranitils.option.waypointCoordinateConvert": "WaypointCoordinateConvert",
+  "text.autoconfig.ranitils.option.waypointCoordinateConvert.@Tooltip": "Make waypoints convert \noverworld coordinates to nether coordinates & vice versa\n\n\u00a77finally nether portal maker 3000",
+  "text.autoconfig.ranitils.option.noWaypointBeam": "NoWaypointBeam",
+  "text.autoconfig.ranitils.option.noWaypointBeam.@Tooltip": "Disable the beam for waypoints\n\n\u00a77Bzuhzzzzzzzuhzzzzzuhzzzz \u00a7o(lightsaber noises)",
+  "text.autoconfig.ranitils.option.waypointSquareIcon": "WaypointSquareIcon",
+  "text.autoconfig.ranitils.option.waypointSquareIcon.@Tooltip": "Use a square target icon for waypoints\n\n\u00a77Why no cute? :("
 }

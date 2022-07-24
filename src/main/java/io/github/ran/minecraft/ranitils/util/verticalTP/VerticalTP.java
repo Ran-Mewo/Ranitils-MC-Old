@@ -4,6 +4,7 @@ import com.mojang.blaze3d.platform.InputConstants;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -19,20 +20,23 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class VerticalTP {
-
     public static final KeyMapping key = KeyBindingHelper.registerKeyBinding(new KeyMapping(
             "key.ranitils.verticaltp",
             InputConstants.Type.KEYSYM,
             InputConstants.UNKNOWN.getValue(),
             "category.ranitils"
     ));
+    private static boolean keyPressed = false;
 
     public static void register() {
         ClientTickEvents.END_CLIENT_TICK.register(mc -> {
-            if (key.isDown()) {
+            if (key.isDown() && !keyPressed) {
+                keyPressed = true;
                 ModConfig.getInstance().verticalTP = !ModConfig.getInstance().verticalTP;
                 ModConfig.getConfigHolder().save();
-                if (mc.player != null) mc.player.sendSystemMessage(Component.literal("\u00a77[Ranitils] Vertical TP: " + ModConfig.getInstance().verticalTP));
+                if (mc.player != null) mc.player.sendSystemMessage(Component.literal("[Ranitils] Vertical TP: " + ModConfig.getInstance().verticalTP).withStyle(ChatFormatting.GRAY));
+            } else if (keyPressed && !key.isDown()) {
+                keyPressed = false;
             }
         });
         ClientTickEvents.END_CLIENT_TICK.register(VerticalTP::tryTeleport);
