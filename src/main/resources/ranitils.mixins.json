@@ -6,6 +6,7 @@
   "client": [
     "anyArmor.MultiPlayerGameModeMixin",
     "autoSwitchElytra.LocalPlayerMixin",
+    "bowInstantKill.MultiPlayerGameModeMixin",
     "elytraRecast.LivingEntityMixin",
     "roadrunner.MultiPlayerGameModeMixin",
     "waypoints.ChatComponentMixin",

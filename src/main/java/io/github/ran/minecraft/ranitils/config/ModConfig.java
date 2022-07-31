@@ -13,6 +13,9 @@ public class ModConfig implements ConfigData {
     public boolean wearableItems = true;
 
     @ConfigEntry.Gui.Tooltip
+    public boolean bowInstantKill = false;
+
+    @ConfigEntry.Gui.Tooltip
     public boolean autoSwitchElytra = true;
 
     @ConfigEntry.Gui.Tooltip // This might be called elytraBounce
