@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 // Code is from OMMC (https://github.com/plusls/oh-my-minecraft-client)
 // Which is by plusls and is licensed under the GNU Lesser General Public License v3.0
 @Mixin(LiteralContents.class)
-public interface TextComponentAccessor {
+public interface TextComponentAccessorMixin {
     @Accessor
     String getText();
 

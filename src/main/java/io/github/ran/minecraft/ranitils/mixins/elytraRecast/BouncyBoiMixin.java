@@ -1,7 +1,7 @@
 package io.github.ran.minecraft.ranitils.mixins.elytraRecast;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.elytraRecast.ElytraRecastHelper;
+import io.github.ran.minecraft.ranitils.stuff.elytraRecast.ElytraRecastHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 // Most of the code is from elytra-recast (https://github.com/InLieuOfLuna/elytra-recast) (https://modrinth.com/mod/elytra-recast)
 // Which is by Luna & is licensed under the MIT license
 @Mixin(LivingEntity.class)
-public abstract class LivingEntityMixin {
+public abstract class BouncyBoiMixin {
     @Unique
     private boolean prevElytra = false;
 

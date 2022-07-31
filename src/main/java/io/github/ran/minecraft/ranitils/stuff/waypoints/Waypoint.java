@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.util.waypoints;
+package io.github.ran.minecraft.ranitils.stuff.waypoints;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -7,7 +7,7 @@ import com.mojang.brigadier.Command;
 import com.mojang.math.Matrix4f;
 import com.mojang.math.Vector3f;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.mixins.waypoints.TextComponentAccessor;
+import io.github.ran.minecraft.ranitils.mixins.waypoints.TextComponentAccessorMixin;
 import io.github.ran.minecraft.ranitils.mixins.waypoints.TranslatableComponentAccessor;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
@@ -162,7 +162,7 @@ public class Waypoint {
             return false;
         }
 
-        String message = ((TextComponentAccessor) (Object) literalChatText).getText();
+        String message = ((TextComponentAccessorMixin) (Object) literalChatText).getText();
         ArrayList<Tuple<Integer, String>> waypointPairs = getWaypointStrings(message);
         if (waypointPairs.size() > 0) {
             Style style = chat.getStyle();
@@ -202,7 +202,7 @@ public class Waypoint {
             for (int i = 0; i < texts.size(); ++i) {
                 chat.getSiblings().add(i, texts.get(i));
             }
-            ((TextComponentAccessor) (Object) literalChatText).setText("");
+            ((TextComponentAccessorMixin) (Object) literalChatText).setText("");
             ((MutableComponent) chat).withStyle(Style.EMPTY);
             return true;
         }
