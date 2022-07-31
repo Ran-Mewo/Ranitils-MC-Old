@@ -1,8 +1,8 @@
 package io.github.ran.minecraft.ranitils.mixins.autoSwitchElytra;
 
 import com.mojang.authlib.GameProfile;
+import io.github.ran.minecraft.ranitils.stuff.autoSwitchElytra.AutoSwitchElytra;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.autoSwitchElytra.AutoSwitchElytra;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.AbstractClientPlayer;
@@ -21,14 +21,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 // Most of the code here is from OMMC (https://github.com/plusls/oh-my-minecraft-client/blob/multi/src/main/java/com/plusls/ommc/mixin/feature/autoSwitchElytra/MixinClientPlayerEntity.java)
 // Which is by plusls and is licensed under the GNU Lesser General Public License v3.0
 @Mixin(LocalPlayer.class)
-public abstract class LocalPlayerMixin extends AbstractClientPlayer {
+public abstract class RecastElytraMixin extends AbstractClientPlayer {
     @Shadow
     @Final
     protected Minecraft minecraft;
 
     boolean prevFallFlying = false;
 
-    public LocalPlayerMixin(ClientLevel world, GameProfile profile) {
+    public RecastElytraMixin(ClientLevel world, GameProfile profile) {
         super(world, profile, null);
     }
 

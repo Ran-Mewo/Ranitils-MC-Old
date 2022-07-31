@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.util.waypoints;
+package io.github.ran.minecraft.ranitils.stuff.waypoints;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;

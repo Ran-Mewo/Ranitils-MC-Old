@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.util.autoSwitchElytra;
+package io.github.ran.minecraft.ranitils.stuff.autoSwitchElytra;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

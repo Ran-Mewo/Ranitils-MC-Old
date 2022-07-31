@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.util.waypoints;
+package io.github.ran.minecraft.ranitils.stuff.waypoints;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;

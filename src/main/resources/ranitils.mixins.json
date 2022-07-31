@@ -4,14 +4,15 @@
   "package": "io.github.ran.minecraft.ranitils.mixins",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "anyArmor.MultiPlayerGameModeMixin",
-    "autoSwitchElytra.LocalPlayerMixin",
-    "bowInstantKill.MultiPlayerGameModeMixin",
-    "elytraRecast.LivingEntityMixin",
-    "roadrunner.MultiPlayerGameModeMixin",
-    "waypoints.ChatComponentMixin",
-    "waypoints.LevelRendererMixin",
-    "waypoints.TextComponentAccessor",
+    "anyArmor.ArmorSlotClickMixin",
+    "autoSwitchElytra.RecastElytraMixin",
+    "bowInstantKill.ReleaseBowMixin",
+    "elytraRecast.BouncyBoiMixin",
+    "roadrunner.FlatDigMixin",
+
+    "waypoints.ChatParserMixin",
+    "waypoints.TextComponentAccessorMixin",
+    "waypoints.WaypointRendererMixin",
     "waypoints.TranslatableComponentAccessor"
   ],
   "injectors": {

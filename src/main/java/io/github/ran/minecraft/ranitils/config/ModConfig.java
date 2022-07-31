@@ -14,6 +14,9 @@ public class ModConfig implements ConfigData {
 
     @ConfigEntry.Gui.Tooltip
     public boolean bowInstantKill = false;
+    @ConfigEntry.Gui.Tooltip
+    @ConfigEntry.BoundedDiscrete(min = 16, max = 512)
+    public int bowInstantKillCharges = 100;
 
     @ConfigEntry.Gui.Tooltip
     public boolean autoSwitchElytra = true;

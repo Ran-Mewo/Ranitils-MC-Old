@@ -1,7 +1,7 @@
 package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
+import io.github.ran.minecraft.ranitils.stuff.anyArmor.AnyArmor;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.util.anyArmor.AnyArmor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 // FIXME: Fix this bad code cause I didn't know what I was doing and it was more of a test to see if this is possible.
 @Mixin(MultiPlayerGameMode.class)
-public abstract class MultiPlayerGameModeMixin {
+public abstract class ArmorSlotClickMixin {
 	@Shadow public abstract void handleInventoryMouseClick(int i, int j, int k, ClickType clickType, Player player);
 
 	@Unique
