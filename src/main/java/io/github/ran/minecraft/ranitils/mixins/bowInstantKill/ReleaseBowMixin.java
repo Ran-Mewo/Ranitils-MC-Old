@@ -20,18 +20,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ReleaseBowMixin {
     @Inject(method = "releaseUsingItem", at = @At("HEAD"))
     public void releaseUsingItem(Player player, CallbackInfo ci) {
-        // check if bowInstantKill is enabled and player is local
         if (ModConfig.getInstance().bowInstantKill && player instanceof LocalPlayer personWithBetterGamingChair && player.isHolding(Items.BOW)) {
             BowInstantKill.addVelocity(personWithBetterGamingChair);
         }
     }
-    /* glitch no crossbow because stupid.
-    @Inject(method = "useItem", at = @At("HEAD"))
-    public void useItem(Player player, InteractionHand interactionHand, CallbackInfoReturnable<InteractionResult> cir) {
-        if (ModConfig.getInstance().bowInstantKill && player instanceof LocalPlayer personWithBetterGamingChair) {
-            if (CrossbowItem.isCharged(player.getItemInHand(interactionHand))) {
-                BowInstantKill.addVelocity(personWithBetterGamingChair);
-            }
-        }
-    }*/
 }
