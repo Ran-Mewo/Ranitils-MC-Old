@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 // Most of the code is from elytra-recast (https://github.com/InLieuOfLuna/elytra-recast) (https://modrinth.com/mod/elytra-recast)
 // Which is by Luna & is licensed under the MIT license
 @Mixin(LivingEntity.class)
-public class LivingEntityMixin {
+public abstract class LivingEntityMixin {
     @Unique
     private boolean prevElytra = false;
 
