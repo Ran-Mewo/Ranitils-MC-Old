@@ -1,6 +1,6 @@
 package io.github.ran.minecraft.ranitils.mixins.waypoints;
 
-import io.github.ran.minecraft.ranitils.stuff.waypoints.Waypoint;
+import io.github.ran.minecraft.ranitils.features.waypoints.Waypoint;
 import net.minecraft.client.gui.components.ChatComponent;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;

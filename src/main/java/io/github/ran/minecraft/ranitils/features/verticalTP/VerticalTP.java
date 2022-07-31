@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.stuff.verticalTP;
+package io.github.ran.minecraft.ranitils.features.verticalTP;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import io.github.ran.minecraft.ranitils.config.ModConfig;

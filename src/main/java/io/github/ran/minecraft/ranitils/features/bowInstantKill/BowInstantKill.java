@@ -1,5 +1,5 @@
 
-package io.github.ran.minecraft.ranitils.stuff.bowInstantKill;
+package io.github.ran.minecraft.ranitils.features.bowInstantKill;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import net.minecraft.client.player.LocalPlayer;

@@ -1,6 +1,6 @@
 package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
-import io.github.ran.minecraft.ranitils.stuff.anyArmor.AnyArmor;
+import io.github.ran.minecraft.ranitils.features.anyArmor.AnyArmor;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
