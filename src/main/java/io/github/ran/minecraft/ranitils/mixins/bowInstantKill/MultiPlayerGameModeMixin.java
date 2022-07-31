@@ -16,7 +16,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class MultiPlayerGameModeMixin {
     @Inject(method = "releaseUsingItem", at = @At("HEAD"))
     public void releaseUsingItem(Player player, CallbackInfo ci) {
-        if (ModConfig.getInstance().bowInstantKill && player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == Items.BOW && player instanceof LocalPlayer personWithBetterGamingChair) {
+        if (ModConfig.getInstance().bowInstantKill && (player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == Items.BOW ||
+                player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == Items.CROSSBOW) && player instanceof LocalPlayer personWithBetterGamingChair) {
             BowInstantKill.addVelocity(personWithBetterGamingChair);
         }
     }
