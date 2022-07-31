@@ -37,6 +37,9 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public boolean verticalTP = false;
 
+    @ConfigEntry.Gui.Tooltip
+    public boolean mineFree = false;
+
     public static void init() {
         AutoConfig.register(ModConfig.class, Toml4jConfigSerializer::new);
     }

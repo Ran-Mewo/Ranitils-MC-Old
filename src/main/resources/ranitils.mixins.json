@@ -8,12 +8,12 @@
     "autoSwitchElytra.RecastElytraMixin",
     "bowInstantKill.ReleaseBowMixin",
     "elytraRecast.BouncyBoiMixin",
+    "mineFree.MineFreeMixin",
     "roadrunner.FlatDigMixin",
-
     "waypoints.ChatParserMixin",
     "waypoints.TextComponentAccessorMixin",
-    "waypoints.WaypointRendererMixin",
-    "waypoints.TranslatableComponentAccessor"
+    "waypoints.TranslatableComponentAccessor",
+    "waypoints.WaypointRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
