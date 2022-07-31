@@ -5,7 +5,7 @@
   "name": "Ranitils-MC",
   "description": "A small utility mod for Ran (Not to be confused with Ran's utility library \"Ranitils\")\n\n§6Special thanks to these people:§e\nCodeF53 (For helping me make mod)\nplusls (For creating OMMC)\nLuna (For creating Elytra Recast)§r§7\n",
   "authors": [
-    "Ran"
+    "Ran", "CodeF53"
   ],
   "contact": {
     "homepage": "https://ran-helo.github.io/",
