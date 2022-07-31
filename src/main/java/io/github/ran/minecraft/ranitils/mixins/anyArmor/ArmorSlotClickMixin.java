@@ -40,9 +40,10 @@ public abstract class ArmorSlotClickMixin {
 							// Magic!
 							this.handleInventoryMouseClick(syncId, prevPickSlot, button, clickType, player);
 							AnyArmor.putArmor_MC(prevPickSlot, slotId);
+
+							// Put the item previously in the armor slot in the user's cursor
+							this.handleInventoryMouseClick(syncId, prevPickSlot, 0, ClickType.PICKUP, player);
 						}
-						// Reset the previously clicked slot & return
-						prevPickSlot = -1;
 						ci.cancel();
 					} else {
 						prevPickSlot = slotId;
