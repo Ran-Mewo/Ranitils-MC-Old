@@ -1,6 +1,6 @@
 package io.github.ran.minecraft.ranitils.mixins.anyArmor;
 
-import io.github.ran.minecraft.ranitils.stuff.anyArmor.AnyArmor;
+import io.github.ran.minecraft.ranitils.features.anyArmor.AnyArmor;
 import io.github.ran.minecraft.ranitils.config.ModConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
@@ -40,9 +40,10 @@ public abstract class ArmorSlotClickMixin {
 							// Magic!
 							this.handleInventoryMouseClick(syncId, prevPickSlot, button, clickType, player);
 							AnyArmor.putArmor_MC(prevPickSlot, slotId);
+
+							// Put the item previously in the armor slot in the user's cursor
+							this.handleInventoryMouseClick(syncId, prevPickSlot, 0, ClickType.PICKUP, player);
 						}
-						// Reset the previously clicked slot & return
-						prevPickSlot = -1;
 						ci.cancel();
 					} else {
 						prevPickSlot = slotId;

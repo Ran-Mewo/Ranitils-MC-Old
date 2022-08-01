@@ -2,7 +2,7 @@ package io.github.ran.minecraft.ranitils.mixins.waypoints;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Matrix4f;
-import io.github.ran.minecraft.ranitils.stuff.waypoints.Waypoint;
+import io.github.ran.minecraft.ranitils.features.waypoints.Waypoint;
 import net.minecraft.client.Camera;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.LevelRenderer;

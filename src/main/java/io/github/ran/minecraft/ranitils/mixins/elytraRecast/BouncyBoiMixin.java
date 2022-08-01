@@ -1,7 +1,7 @@
 package io.github.ran.minecraft.ranitils.mixins.elytraRecast;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.stuff.elytraRecast.ElytraRecastHelper;
+import io.github.ran.minecraft.ranitils.features.elytraRecast.ElytraRecastHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;

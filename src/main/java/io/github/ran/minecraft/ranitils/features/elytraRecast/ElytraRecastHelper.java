@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.stuff.elytraRecast;
+package io.github.ran.minecraft.ranitils.features.elytraRecast;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.protocol.game.ServerboundPlayerCommandPacket;

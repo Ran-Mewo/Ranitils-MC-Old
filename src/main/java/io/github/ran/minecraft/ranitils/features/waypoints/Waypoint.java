@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.stuff.waypoints;
+package io.github.ran.minecraft.ranitils.features.waypoints;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;

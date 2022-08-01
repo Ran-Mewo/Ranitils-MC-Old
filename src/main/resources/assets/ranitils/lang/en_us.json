@@ -30,5 +30,8 @@
   "text.autoconfig.ranitils.option.bowInstantKill": "BowInstaKill",
   "text.autoconfig.ranitils.option.bowInstantKill.@Tooltip": "Allows you to instant kill entities with bow\n\n§7i have a good gaming chair\n§4Use at your own risk",
   "text.autoconfig.ranitils.option.bowInstantKillCharges": "BowInstaKillCharges",
-  "text.autoconfig.ranitils.option.bowInstantKillCharges.@Tooltip": "Number of times velocity is incremented when firing\nbigger number, more hungy it make you, but more damage\n40 charges - 0 hunger taken ~33damage\n\n§7§oima chargin mah laser"
+  "text.autoconfig.ranitils.option.bowInstantKillCharges.@Tooltip": "Number of times velocity is incremented when firing\nbigger number, more hungy it make you, but more damage\n40 charges - 0 hunger taken ~33damage\n\n§7§oima chargin mah laser",
+
+  "text.autoconfig.ranitils.option.mineFree": "MineFree",
+  "text.autoconfig.ranitils.option.mineFree.@Tooltip": "Removes 6 tick mining speed delay and Lets you keep breaking blocks when you switch items.\n\n§7haha, mine go zoom now"
 }

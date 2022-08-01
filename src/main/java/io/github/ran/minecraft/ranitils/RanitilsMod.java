@@ -1,9 +1,9 @@
 package io.github.ran.minecraft.ranitils;
 
 import io.github.ran.minecraft.ranitils.config.ModConfig;
-import io.github.ran.minecraft.ranitils.stuff.anyArmor.AnyArmor;
-import io.github.ran.minecraft.ranitils.stuff.verticalTP.VerticalTP;
-import io.github.ran.minecraft.ranitils.stuff.waypoints.Waypoint;
+import io.github.ran.minecraft.ranitils.features.anyArmor.AnyArmor;
+import io.github.ran.minecraft.ranitils.features.verticalTP.VerticalTP;
+import io.github.ran.minecraft.ranitils.features.waypoints.Waypoint;
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

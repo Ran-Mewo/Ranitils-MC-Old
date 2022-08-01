@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.stuff.roadRunner;
+package io.github.ran.minecraft.ranitils.features.roadRunner;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;

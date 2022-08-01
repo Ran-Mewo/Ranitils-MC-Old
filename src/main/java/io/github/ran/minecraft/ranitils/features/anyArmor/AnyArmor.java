@@ -1,4 +1,4 @@
-package io.github.ran.minecraft.ranitils.stuff.anyArmor;
+package io.github.ran.minecraft.ranitils.features.anyArmor;
 
 import com.mojang.brigadier.Command;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
@@ -37,8 +37,8 @@ public class AnyArmor {
             case 2 -> putLeggings(slot);
             case 3 -> putBoots(slot);
         }
-    }
 
+    }
     public static void putArmor_MC(int slot, int armorSlot) {
         // 5 = helmet, 6 = chestplate, 7 = leggings, 8 = boots
         switch (armorSlot) {
