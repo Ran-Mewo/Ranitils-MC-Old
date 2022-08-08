@@ -13,7 +13,8 @@
     "waypoints.ChatParserMixin",
     "waypoints.TextComponentAccessorMixin",
     "waypoints.TranslatableComponentAccessor",
-    "waypoints.WaypointRendererMixin"
+    "waypoints.WaypointRendererMixin",
+    "tridentExploit.TridentItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

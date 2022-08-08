@@ -33,5 +33,8 @@
   "text.autoconfig.ranitils.option.bowInstantKillCharges.@Tooltip": "Number of times velocity is incremented when firing\nbigger number, more hungy it make you, but more damage\n40 charges - 0 hunger taken ~33damage\n\n§7§oima chargin mah laser",
 
   "text.autoconfig.ranitils.option.mineFree": "MineFree",
-  "text.autoconfig.ranitils.option.mineFree.@Tooltip": "Removes 6 tick mining speed delay and Lets you keep breaking blocks when you switch items.\n\n§7haha, mine go zoom now"
+  "text.autoconfig.ranitils.option.mineFree.@Tooltip": "Removes 6 tick mining speed delay and Lets you keep breaking blocks when you switch items.\n\n§7haha, mine go zoom now",
+
+  "text.autoconfig.ranitils.option.tridentExploit": "Riptide Trident Exploit",
+  "text.autoconfig.ranitils.option.tridentExploit.@Tooltip": "Removes Riptide's requirement for the player to be in Water/Rain and 10 tick charge time.\n\n§7Trident goes brrrrrrrrrrr\n§7I orginally discovered this exploit!\n§4Use at your own risk"
 }
